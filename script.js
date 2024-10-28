@@ -429,10 +429,7 @@ const units = {
             396: {de: ["eine Medaille"], fr: ["une médaille"]},
             397: {de: ["jagen"], fr: ["chasser"]},
             398: {de: ["Inuit-"], fr: ["inuit", "inuite"]},
-            399: {de: [""], fr: [""]},
-            400: {de: [""], fr: [""]},
-            401: {de: [""], fr: [""]},
-            402: {de: [""], fr: [""]},
+        
                
         }
     },
