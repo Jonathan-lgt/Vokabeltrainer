@@ -549,8 +549,8 @@ const units = {
 let selectedChapters = [];
 let currentQuestionIndex = 0;
 let currentLanguage = 'de-fr';
-let questionOrder = []; 
-let currentChapterIndex = 0; // Neuer Index, um durch die Kapitel zu navigieren
+let questionOrder = [];
+let currentChapterIndex = 0;
 
 function handleSelection() {
     const selection = document.getElementById("selection").value;
@@ -585,12 +585,16 @@ function startQuiz() {
 
     currentQuestionIndex = 0;
     currentChapterIndex = 0;
-    questionOrder = Object.keys(units[selectedChapters[currentChapterIndex]].words);
-    questionOrder.sort(() => Math.random() - 0.5);
-
+    loadChapterQuestions(); // Lade die Fragen für das erste Kapitel
     document.getElementById("chapterForm").style.display = "none";
     document.getElementById("quiz-container").style.display = "block";
     loadQuestion();
+}
+
+function loadChapterQuestions() {
+    // Frage-Reihenfolge für das aktuelle Kapitel basierend auf dem Index setzen und mischen
+    questionOrder = Object.keys(units[selectedChapters[currentChapterIndex]].words);
+    questionOrder.sort(() => Math.random() - 0.5);
 }
 
 function loadQuestion() {
@@ -606,8 +610,7 @@ function loadQuestion() {
     } else if (currentChapterIndex < selectedChapters.length - 1) {
         currentChapterIndex++;
         currentQuestionIndex = 0;
-        questionOrder = Object.keys(units[selectedChapters[currentChapterIndex]].words);
-        questionOrder.sort(() => Math.random() - 0.5);
+        loadChapterQuestions(); // Nächste Kapitel laden
         loadQuestion();
     } else {
         endQuiz();
@@ -633,9 +636,8 @@ function checkAnswer() {
         feedbackElement.textContent = "";
         currentQuestionIndex++;
         loadQuestion();
-    }, 2000); // auf 2000 ms (2 Sekunden) geändert
+    }, 2000);
 }
-
 
 function endQuiz() {
     document.getElementById("quiz-container").style.display = "none";
@@ -651,3 +653,4 @@ function goBackToSelection() {
     document.getElementById("chapterForm").style.display = "block";
     document.getElementById("unit-status").innerHTML = "";     
 }
+
