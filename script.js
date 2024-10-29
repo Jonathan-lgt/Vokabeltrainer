@@ -574,7 +574,7 @@ function startQuiz() {
     selectedChapters = [];
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
-            selectedChapters.push(checkbox.value);
+            selectedChapters.push(parseInt(checkbox.value));
         }
     });
 
@@ -593,7 +593,8 @@ function startQuiz() {
 
 function loadChapterQuestions() {
     // Frage-Reihenfolge für das aktuelle Kapitel basierend auf dem Index setzen und mischen
-    questionOrder = Object.keys(units[selectedChapters[currentChapterIndex]].words);
+    const chapterId = selectedChapters[currentChapterIndex];
+    questionOrder = Object.keys(units[chapterId].words);
     questionOrder.sort(() => Math.random() - 0.5);
 }
 
@@ -610,7 +611,7 @@ function loadQuestion() {
     } else if (currentChapterIndex < selectedChapters.length - 1) {
         currentChapterIndex++;
         currentQuestionIndex = 0;
-        loadChapterQuestions(); // Nächste Kapitel laden
+        loadChapterQuestions(); // Nächstes Kapitel laden
         loadQuestion();
     } else {
         endQuiz();
@@ -631,7 +632,6 @@ function checkAnswer() {
         feedbackElement.textContent = `Falsch! Die richtige Antwort ist: ${correctAnswers.join(', ')}`;
     }
 
-    // Rückmeldung 2 Sekunden anzeigen, bevor zur nächsten Frage gewechselt wird
     setTimeout(() => {
         feedbackElement.textContent = "";
         currentQuestionIndex++;
@@ -653,4 +653,3 @@ function goBackToSelection() {
     document.getElementById("chapterForm").style.display = "block";
     document.getElementById("unit-status").innerHTML = "";     
 }
-
