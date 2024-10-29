@@ -436,11 +436,112 @@ const units = {
     6: {
         name: "Unité 6",
         words: {
-            26: {de: ["Schule"], fr: ["école"]},
-            27: {de: ["Lehrer"], fr: ["enseignant"]},
-            28: {de: ["Schüler"], fr: ["élève"]},
-            29: {de: ["Buch"], fr: ["livre"]},
-            30: {de: ["Tafel"], fr: ["tableau"]},
+            399: {de: ["abhängen", "unterstehen"], fr: ["dépendre"]},
+            400: {de: ["politisch"], fr: ["politique"]},
+            401: {de: ["eine Regierung"], fr: ["un gouvernement"]},
+            402: {de: ["eine Entscheidung"], fr: ["une décision"]},
+            403: {de: ["zentralisiert", "zentralstaatlich", "zentralistisch"], fr: ["centralisé", "centralisée"]},
+            404: {de: ["Föderal-", "föderal", "föderalistisch"], fr: ["fédéral", "fédérale", "fédéraux", "fédérales"]},
+            405: {de: ["ein Lehrplan"], fr: ["un programme scolaire"]},
+            406: {de: ["welcher", "welche", "welches"], fr: ["lequel", "laquelle", "lesquels", "lesquelles"]},
+            407: {de: ["ein Reiseführer"], fr: ["un guide", "un guide de voyage"]},
+            408: {de: ["ein Schatz"], fr: ["un trésor"]},
+            409: {de: ["eine Schatzsuche"], fr: ["une  chasse au trésor"]},
+            410: {de: ["eine Siedlung", "eine Altstadt"], fr: ["une cité"]},
+            411: {de: ["eine Festungsstadt"], fr: ["une ville fotifiée"]},
+            412: {de: ["mittelalterlich"], fr: ["médiéval", "médiévale", "médiévaux", "médiévales"]},
+            413: {de: ["eine Burg"], fr: ["un château fort"]},
+            414: {de: ["ein Ritter"], fr: ["un chevalier"]},
+            415: {de: ["eine Festungsmauer", "eine Stadtmauer"], fr: ["un rempart"]},
+            416: {de: ["das Erbe", "das Kulturerbe"], fr: ["le patrimoine"]},
+            417: {de: ["historisch", "geschichtlich"], fr: ["historique"]},
+            418: {de: ["eine Hilfe", "eine Unterstützung"], fr: ["une aide"]},
+            419: {de: ["mit Hilfe von"], fr: ["à l'aide de"]},
+            420: {de: ["ein Anzeichen", "ein Hinweis", "ein Indiz"], fr: ["un indice"]},
+            421: {de: ["aufschreiben"], fr: ["noter"]},
+            422: {de: ["ein Buchstabe", "ein Brief"], fr: ["une lettre"]},
+            423: {de: ["angreifen"], fr: ["attaquer"]},
+            424: {de: ["eine Glocke"], fr: ["une cloche"]},
+            425: {de: ["ein Loch"], fr: ["un trou"]},
+            426: {de: ["ein Brunnen"], fr: ["un puits"]},
+            427: {de: ["eine Tiefe"], fr: ["une profondeur"]},
+            428: {de: ["übersetzen"], fr: ["traduire"]},
+            429: {de: ["eine Ziffer", "eine Zahl"], fr: ["un chiffre"]},
+            430: {de: ["ein Kellner", "eine Kellnerin"], fr: ["un serveur", "une serveuse"]},
+            431: {de: ["bauen", "konstruieren"], fr: ["construire"]},
+            432: {de: ["herumgehen", "eine Runde machen"], fr: ["faire le tour"]},
+            433: {de: ["sich ereignen", "stattfinden"], fr: ["avoir lieu"]},
+            434: {de: ["eine Lösung"], fr: ["une solution"]},
+            435: {de: ["gegenüber"], fr: ["en face de"]},
+            436: {de: ["ein Ziel", "ein Bestimmungsort"], fr: ["une destination"]},
+            437: {de: ["eine Safari"], fr: ["un safari"]},
+            438: {de: ["natürlich", "Natur-"], fr: ["naturel", "naturelle"]},
+            439: {de: ["ein Naturreservat", "ein Naturschutzgebiet"], fr: ["une réserve naturelle"]},
+            440: {de: ["ein Stier"], fr: ["un taureau"]},
+            441: {de: ["ein Flamingo"], fr: ["un flamant rose"]},
+            442: {de: ["ein Vogel"], fr: ["un oiseau"]},
+            443: {de: ["beobachten"], fr: ["observer"]},
+            444: {de: ["ein Viehhirt"], fr: ["un gardian"]},
+            445: {de: ["bewachen"], fr: ["garder"]},
+            446: {de: ["ein Ort", "Orte"], fr: ["un lieu", "des lieux"]},
+            447: {de: ["die Viehzucht"], fr: ["l'élevage"]},
+            448: {de: ["so viel"], fr: ["tellement de"]},
+            449: {de: ["großziehen", "erziehen", "züchten"], fr: ["élever"]},
+            450: {de: ["nachlaufen", "hinterherrennen"], fr: ["courir après"]},
+            451: {de: ["eine Tradition"], fr: ["une tradition"]},
+            452: {de: ["eine Arena", "eine Stierkampfarena"], fr: ["une arène"]},
+            453: {de: ["eine Prozession", "ein Festumzug"], fr: ["une procession"]},
+            454: {de: ["ein Zigeuner", "eine Zigeunerin"], fr: ["un Gitan", "une Gitane"]},
+            455: {de: ["eine Statue"], fr: ["une statue"]},
+            456: {de: ["mit dem Pferd", "auf dem Pferd"], fr: ["à cheval"]},
+            457: {de: ["traditionell"], fr: ["traditionnel", "traditionnelle"]},
+            458: {de: ["eine Legende", "eine Sage"], fr: ["une légende"]},
+            459: {de: ["die Zukunft"], fr: ["l'avenir"]},
+            560: {de: ["ein Gitarrist", "eine Gitarristin"], fr: ["un guitariste", "une guitariste"]},
+            461: {de: ["eine Brücke"], fr: ["un pont"]},
+            462: {de: ["hoch"], fr: ["haut", "haute"]},
+            463: {de: ["ein Aquädukt"], fr: ["un aqueduc"]},
+            464: {de: ["eine Führung"], fr: ["une visite guidée"]},
+            465: {de: ["beleuchten"], fr: ["illuminer"]},
+            466: {de: ["eine Zikade"], fr: ["une cigale"]},
+            467: {de: ["ein Radfahrer", "eine Radfahrerin"], fr: ["un cycliste", "une cycliste"]},
+            468: {de: ["jedenfalls", "sowieso"], fr: ["de toute façon"]},
+            469: {de: ["ein Zuschauer", "eine Zuschauerin"], fr: ["un spectateur", "une spectatrice"]},
+            470: {de: ["verkaufen"], fr: ["vendre"]},
+            471: {de: ["eine Leinwand", "ein Bildschirm"], fr: ["un écran"]},
+            472: {de: ["eine Etappe"], fr: ["une étape"]},
+            473: {de: ["eine Durchfahrt", "ein Durchgang", "eine Passage"], fr: ["un passage"]},
+            474: {de: ["austeilen", "verteilen"], fr: ["distribuer"]},
+            475: {de: ["geduldig"], fr: ["patient", "patiente"]},
+            476: {de: ["aufseiten"], fr: ["du côte de"]},
+            477: {de: ["unglaublich"], fr: ["incroyable"]},
+            478: {de: ["Nachbar"], fr: ["voisin", "voisine"]},
+            479: {de: ["ein Gewinner", "eine Gewinnerin"], fr: ["un gagnant", "une gagnante"]},
+            480: {de: ["ein Trikot"], fr: ["un maillot"]},
+            481: {de: ["unterschiedlich", "abwechslungsreich"], fr: ["varié", "variée"]},
+            482: {de: ["ein Gipfel"], fr: ["un sommet"]},
+            483: {de: ["international"], fr: ["international", "internationale", "internationaux", "internationales"]},
+            484: {de: ["nützlich"], fr: ["utile"]},
+            485: {de: ["eine Baustelle", "ein Workcamp"], fr: ["un chantier"]},
+            486: {de: ["eine Festung"], fr: ["un fort"]},
+            487: {de: ["reparieren"], fr: ["réparer"]},
+            488: {de: ["renovieren"], fr: ["rénover"]},
+            489: {de: ["hart", "schwierig"], fr: ["dur", "dure"]},
+            490: {de: ["die Freizeit"], fr: ["les loisirs"]},
+            491: {de: ["eine Yacht"], fr: ["un yacht"]},
+            492: {de: ["ein Selfie"], fr: ["un selfie"]},
+            493: {de: ["ein Fotograf", "eine Fotografin"], fr: ["un photographe", "une photographe"]},
+            494: {de: ["ein Autogramm"], fr: ["un autographe"]},
+            495: {de: ["das Segel", "das Segeln"], fr: ["la voile"]},
+            496: {de: ["ein Profi"], fr: ["un pro", "une pro"]},
+            497: {de: ["ein Feuerwerk"], fr: ["un feu d'artifice"]},
+            498: {de: ["Wasser schlucken"], fr: ["boire la tasse"]},
+            499: {de: ["Freunde finden"], fr: ["se faire des amis"]},
+            500: {de: ["das WLAN"], fr: ["le wifi"]},
+            501: {de: ["ein Flug"], fr: ["un vol"]},
+            502: {de: ["eine Seilrutsche", "eine Zipline"], fr: ["une tyrolienne"]},
+            503: {de: ["jdm. ist schlecht"], fr: ["qn a mal au cœur"]},
+            
         }
     },
 };
@@ -448,8 +549,8 @@ const units = {
 let selectedChapters = [];
 let currentQuestionIndex = 0;
 let currentLanguage = 'de-fr';
-let questionOrder = []; // Neu für die Reihenfolge der Fragen
-let currentUnitKey = null; // Um die aktuelle Unité zu speichern
+let questionOrder = []; 
+let currentChapterIndex = 0; // Neuer Index, um durch die Kapitel zu navigieren
 
 function handleSelection() {
     const selection = document.getElementById("selection").value;
@@ -483,21 +584,12 @@ function startQuiz() {
     }
 
     currentQuestionIndex = 0;
-    questionOrder = []; // Neu: Reihenfolge zurücksetzen
-    document.getElementById("chapterForm").style.display = "none";
-    document.getElementById("quiz-container").style.display = "block";
-
-    // Fülle die Frageordnung mit den IDs der Wörter aus den gewählten Kapiteln
-    selectedChapters.forEach(chapter => {
-        const wordsInChapter = units[chapter].words;
-        for (let wordKey in wordsInChapter) {
-            questionOrder.push(wordKey);
-        }
-    });
-
-    // Mische die Fragen
+    currentChapterIndex = 0;
+    questionOrder = Object.keys(units[selectedChapters[currentChapterIndex]].words);
     questionOrder.sort(() => Math.random() - 0.5);
 
+    document.getElementById("chapterForm").style.display = "none";
+    document.getElementById("quiz-container").style.display = "block";
     loadQuestion();
 }
 
@@ -507,25 +599,27 @@ function loadQuestion() {
 
     if (currentQuestionIndex < questionOrder.length) {
         const wordKey = questionOrder[currentQuestionIndex];
-        // Finde die Unité, die das Wort enthält
-        currentUnitKey = Object.keys(units).find(unit => units[unit].words[wordKey]);
-        const word = units[currentUnitKey].words[wordKey];
+        const word = units[selectedChapters[currentChapterIndex]].words[wordKey];
 
-        // Setze die Frage basierend auf der Sprachrichtung
         questionElement.textContent = currentLanguage === 'de-fr' ? word.de.join(", ") : word.fr.join(", ");
-        document.getElementById("answer").value = ""; // Leert das Textfeld
+        document.getElementById("answer").value = "";
+    } else if (currentChapterIndex < selectedChapters.length - 1) {
+        currentChapterIndex++;
+        currentQuestionIndex = 0;
+        questionOrder = Object.keys(units[selectedChapters[currentChapterIndex]].words);
+        questionOrder.sort(() => Math.random() - 0.5);
+        loadQuestion();
     } else {
-        endQuiz(); // Quiz beenden, wenn alle Fragen durch sind
+        endQuiz();
     }
 }
 
 function checkAnswer() {
-    const answer = document.getElementById("answer").value.trim().toLowerCase(); // Benutzereingabe in Kleinbuchstaben
+    const answer = document.getElementById("answer").value.trim().toLowerCase();
     const feedbackElement = document.getElementById("feedback");
     const wordKey = questionOrder[currentQuestionIndex];
-    const correctAnswers = currentLanguage === 'de-fr' ? units[currentUnitKey].words[wordKey].fr : units[currentUnitKey].words[wordKey].de;
+    const correctAnswers = currentLanguage === 'de-fr' ? units[selectedChapters[currentChapterIndex]].words[wordKey].fr : units[selectedChapters[currentChapterIndex]].words[wordKey].de;
 
-    // Überprüfe, ob die Antwort mit einer der richtigen Lösungen übereinstimmt
     const isCorrect = correctAnswers.some(correct => answer === correct.toLowerCase());
 
     if (isCorrect) {
@@ -534,13 +628,14 @@ function checkAnswer() {
         feedbackElement.textContent = `Falsch! Die richtige Antwort ist: ${correctAnswers.join(', ')}`;
     }
 
-    // Meldung nach 1.3 Sekunden ausblenden und nächste Frage laden
+    // Rückmeldung 2 Sekunden anzeigen, bevor zur nächsten Frage gewechselt wird
     setTimeout(() => {
         feedbackElement.textContent = "";
         currentQuestionIndex++;
-        loadQuestion(); // Nächste Frage laden
-    }, 1300); // Zeit auf 1300 ms (1.3 Sekunden) gesetzt
+        loadQuestion();
+    }, 2000); // auf 2000 ms (2 Sekunden) geändert
 }
+
 
 function endQuiz() {
     document.getElementById("quiz-container").style.display = "none";
@@ -554,5 +649,5 @@ function endQuiz() {
 function goBackToSelection() {
     document.getElementById("quiz-container").style.display = "none";
     document.getElementById("chapterForm").style.display = "block";
-    document.getElementById("unit-status").innerHTML = ""; // Status zurücksetzen     
+    document.getElementById("unit-status").innerHTML = "";     
 }
